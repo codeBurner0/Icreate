@@ -1,0 +1,41 @@
+
+/* CSS */
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  font-size: 15px;
+}
+
+/*  */
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #6469ff;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+.image{
+    width: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#back{
+  background-color: rgba(178, 187, 236, 0.248);
+}
