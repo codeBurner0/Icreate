@@ -69,6 +69,7 @@ const Home = () => {
         <h1 data-text="The_Community_Showcase..." id='showcase' className="font-extrabold text-[#222328] text-[32px]" >The_Community_Showcase...</h1>
         </div>
         <header>
+          
   <div class="waviy">
    <span style={{"--i":1}}>B</span>
    <span style={{"--i":2}}>R</span>

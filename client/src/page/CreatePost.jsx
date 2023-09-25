@@ -28,13 +28,13 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('http://localhost:8080/api/v1/dalle', {
+        const response = await fetch('http://localhost:8080/api/v1/dalle/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            prompt: form.prompt,
+            prompt: "form.prompt",
           }),
         });
 
@@ -75,7 +75,6 @@ const CreatePost = () => {
       alert('Please generate an image with proper details');
     }
   };
-
   return (
     <section className="max-w-7xl mx-auto" id='section'>
       <div>
