@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Home.css'
+
 import { preview } from '../assets';
 import { getRandomPrompt } from '../utils';
 import { FormField, Loader } from '../components';
@@ -28,13 +28,13 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('http://localhost:8080/api/v1/dalle/', {
+        const response = await fetch('http://localhost:8080/api/v1/dalle', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            prompt: "form.prompt",
+            prompt: form.prompt,
           }),
         });
 
@@ -65,6 +65,7 @@ const CreatePost = () => {
         });
 
         await response.json();
+        alert('Success');
         navigate('/');
       } catch (err) {
         alert(err);
@@ -75,23 +76,24 @@ const CreatePost = () => {
       alert('Please generate an image with proper details');
     }
   };
+
   return (
-    <section className="max-w-7xl mx-auto" id='section'>
+    <section className="max-w-7xl mx-auto">
       <div>
         <h1 className="font-extrabold text-[#222328] text-[32px]">Create</h1>
-        <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">Generate an imaginative image through ICREATE AI and share it with the community</p>
+        <p className="mt-2 text-[#666e75] text-[14px] max-w-[500px]">Generate an imaginative image through ICREATE and share it with the community</p>
       </div>
-
       <form className="mt-16 max-w-3xl" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-5">
           <FormField
             labelName="Your Name"
             type="text"
             name="name"
-            placeholder="Ex., john doe"
+            placeholder="Ex., Ankit Anand"
             value={form.name}
             handleChange={handleChange}
           />
+
           <FormField
             labelName="Prompt"
             type="text"
@@ -102,6 +104,7 @@ const CreatePost = () => {
             isSurpriseMe
             handleSurpriseMe={handleSurpriseMe}
           />
+
           <div className="relative bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 w-64 p-3 h-64 flex justify-center items-center">
             { form.photo ? (
               <img
@@ -150,82 +153,3 @@ const CreatePost = () => {
 };
 
 export default CreatePost;
-
-
-
-
-
-
-
-
-
-{/* <header>
-  <div class="waviy">
-  <span style={{"--i":1}}>G</span>
-   <span style={{"--i":2}}>E</span>
-   <span style={{"--i":3}}>N</span>
-   <span style={{"--i":4}}>E</span>
-   <span style={{"--i":5}}>R</span>
-   <span style={{"--i":6}}>A</span>
-   <span style={{"--i":7}}>T</span>
-   <span style={{"--i":8}}>E</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <span style={{"--i":38}}>A</span>
-   <span style={{"--i":39}}>N</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <span style={{"--i":27}}>I</span>
-   <span style={{"--i":28}}>M</span>
-   <span style={{"--i":29}}>A</span>
-   <span style={{"--i":30}}>G</span>
-   <span style={{"--i":31}}>I</span>
-   <span style={{"--i":32}}>N</span>
-   <span style={{"--i":33}}>A</span>
-   <span style={{"--i":34}}>T</span>
-   <span style={{"--i":35}}>I</span>
-   <span style={{"--i":36}}>V</span>
-   <span style={{"--i":37}}>E</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <span style={{"--i":57}}>I</span>
-   <span style={{"--i":58}}>M</span>
-   <span style={{"--i":59}}>A</span>
-   <span style={{"--i":60}}>G</span>
-   <span style={{"--i":61}}>E</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <span style={{"--i":62}}>T</span>
-   <span style={{"--i":63}}>H</span>
-   <span style={{"--i":64}}>R</span>
-   <span style={{"--i":65}}>O</span>
-   <span style={{"--i":66}}>U</span>
-   <span style={{"--i":67}}>G</span>
-   <span style={{"--i":68}}>H</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <span style={{"--i":76}}>I</span>
-   <span style={{"--i":77}}>C</span>
-   <span style={{"--i":78}}>R</span>
-   <span style={{"--i":79}}>E</span>
-   <span style={{"--i":80}}>A</span>
-   <span style={{"--i":81}}>T</span>
-   <span style={{"--i":82}}>E</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <span style={{"--i":84}}>A</span>
-   <span style={{"--i":85}}>N</span>
-   <span style={{"--i":86}}>D</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <br />
-   <span style={{"--i":91}}>S</span>
-   <span style={{"--i":87}}>H</span>
-   <span style={{"--i":88}}>A</span>
-   <span style={{"--i":89}}>R</span>
-   <span style={{"--i":90}}>E</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <span style={{"--i":99}}>W</span>
-   <span style={{"--i":92}}>I</span>
-   <span style={{"--i":93}}>T</span>
-   <span style={{"--i":94}}>H</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <span style={{"--i":95}}>Y</span>
-   <span style={{"--i":96}}>O</span>
-   <span style={{"--i":97}}>U</span>
-   <span style={{"--i":98}}>R</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-   <span style={{"--i":99}}>C</span>
-   <span style={{"--i":100}}>O</span>
-   <span style={{"--i":101}}>M</span>
-   <span style={{"--i":102}}>M</span>
-   <span style={{"--i":103}}>U</span>
-   <span style={{"--i":104}}>N</span>
-   <span style={{"--i":105}}>I</span>
-   <span style={{"--i":106}}>T</span>
-   <span style={{"--i":107}}>Y</span>
-  </div>
-  </header> */}

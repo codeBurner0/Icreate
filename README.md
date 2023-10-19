@@ -1,8 +1,7 @@
+# Build and Deploy a Full Stack MERN AI Image Generation App  MidJourney & DALL E Clone
+![Image Generation App](https://i.ibb.co/p0f27C2/Thumbnail-9.png)
 
-# ICREATE
-### Build and Deploy a Full Stack MERN AI Image Generation App
-![Image Generation App](https://github.com/codeBurner0/Icreate/blob/master/Screenshot%202023-04-25%20211624.png)
-![Image Generation App](https://github.com/codeBurner0/Icreate/blob/master/Screenshot%202023-04-25%20212126.png)
+### [🌟 Become a top 1% Next.js 13 developer in only one course](https://jsmastery.pro/next13)
+### [🚀 Land your dream programming job in 6 months](https://jsmastery.pro/masterclass)
 
-<a href="https://icreate1.netlify.app/">Click me to see demo</a>
-### Clone the repo and give a star to it and Enjoy!
+### Launch your development career with project-based coaching - https://www.jsmastery.pro
