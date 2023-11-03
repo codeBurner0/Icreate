@@ -1,0 +1,56 @@
+
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.home-container{
+    background-color:  #2779a7;
+}
+
+.title-box{
+    padding: 18vw ;
+    padding-top: 0vw;
+    color: white;
+    letter-spacing:0.5vw;
+    font-size: 8vw;
+    padding-bottom: 28vw;
+}
+
+.title-span2{
+    padding-left: 10vw;
+    font-family: 'Metal Mania';
+}
+
+.title-span1{
+    font-family: 'Metal Mania';
+}
+
+.title-para{
+    padding: 2vw 3vw 0vw 3vw;
+    font-family: 'Caveat', cursive;
+    letter-spacing:0vw;
+    font-size: 2vw;
+}
+
+.getStarted-button{
+    padding: 0.7vw 4vw;
+    border-radius: 100px;
+    color: white;
+    background-color: black;
+    font-family: 'Caveat', cursive;
+    font-weight: 800;
+    font-size: 1.5vw;
+    border: none;
+    margin-left: 24vw;
+}
+
+.getStarted-button:hover{
+    background-color: #5228F5;
+    border: 3px solid black;
+    cursor: pointer;
+    font-weight: 900;
+}

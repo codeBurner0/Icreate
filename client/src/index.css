@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,6 +6,18 @@
 * {
     font-family: 'Inter', sans-serif;
 }
+
+
+
+.title-box{
+    padding: 18vw ;
+    padding-top: 0vw;
+    color: white;
+    letter-spacing:0.5vw;
+    padding-bottom: 28vw;
+}
+
+
 
 @media screen and (min-width: 480px) {
     .card:nth-child(7n + 1) {

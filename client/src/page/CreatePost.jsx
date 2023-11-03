@@ -30,7 +30,7 @@ const CreatePost = () => {
       try {
         setGeneratingImg(true);
         const response = await fetch(
-          "https://icreateserver-7tuf.onrender.com/api/v1/dalle",
+          "https://icreate-generator.vercel.app/api/v1/dalle",
           {
             method: "POST",
             headers: {
@@ -61,7 +61,7 @@ const CreatePost = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          "https://icreateserver-7tuf.onrender.com/api/v1/post",
+          "https://icreate-generator.vercel.app/api/v1/post",
           {
             method: "POST",
             headers: {

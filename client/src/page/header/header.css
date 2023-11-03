@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+.gpt3__header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 1vw;
+    padding-left: 2vw;
+    padding-bottom: 13vw;
+    font-family: 'Butcher man';
+}
+.gpt-header-container{
+    background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    
+    background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    background: -o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    background: -ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+
+    background: radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+}
+.gpt3__header-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 0rem;
+    width: 90vw;
+}
+
+.gpt3__header-content h1 {
+    font-weight: 800;
+    font-size: 70px;
+    color: rgb(21, 205, 251);
+    line-height: 75px;
+    margin-top: -7vw;
+    font-family: 'Concert One', sans-serif;
+}
+
+.gpt3__header-content p {
+    font-family: 'caveat';
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 1.5rem;
+    color: rgb(0, 204, 255);
+    font-weight: 900;
+        text-align: left;
+}
+
+.gpt3__header-content__input {
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+}
+
+.gpt3__header-content__people {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+    
+}
+
+.gpt3__header-content__people img {
+    width: 182px;
+    height: 38px;
+}
+
+.gpt3__header-content__people p {
+    font-family: var(--font-family);
+    margin: 0 0 0 1rem;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    text-align: center;
+    color: rgb(21, 205, 251);
+}
+
+.gpt3__header-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpt3__header-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.main-div{
+    margin-top: -10vw;
+    padding-bottom: 23vw;
+}
+
+.outer-div{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color:rgba(0, 68, 142, 0.475);
+    width: 75vw;
+    border-radius: 7.5vw;
+    margin: auto;
+    padding: 2vw;
+}
+.inner-div{
+    background-color:rgba(35, 128, 227, 0.475);
+    width: 70vw;
+    border-radius: 6vw;
+    margin:auto ;
+}
+
+.dashborad-image{
+    width: 70vw;
+    padding: 2vw;
+    border-radius: 6vw;
+}
+
+
+.register-button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #ff4820;
+    border: 0.8vw solid transparent;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.2vw;
+    width: 29vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 4.1vw;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Concert One', sans-serif;
+    font-weight: 800;
+    margin-top: 1vw;
+    margin-left: 0vw;
+}
+
+.register-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.register-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.register-button:hover span {
+    padding-right: 25px;
+}
+
+.register-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+@media screen and (max-width: 1050px) {
+    .gpt3__header {
+        flex-direction: column;
+        padding-top: 8vw;
+    }
+
+    .gpt3__header-content {
+        margin: 0 0 3rem;
+    }
+    .register-button {
+        font-size: 2vw;
+        height: 5vw;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        font-family: 'Concert One', sans-serif;
+        font-weight: 800;
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gpt3__header h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .gpt3__header p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .gpt3__header-content__people {
+        flex-direction: column;
+    }
+
+    .gpt3__header-content__people p {
+        margin: 0;
+    }
+
+    .register-button {
+        font-size: 2.5vw;
+        height: 7vw;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        font-family: 'Concert One', sans-serif;
+        font-weight: 800;
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .gpt3__header h1 {
+        font-size: 36px;
+        line-height: 48px;
+        font-family: 'Permanent Marker', cursive;
+        padding-left: 12px;
+        margin-top: -5vw;
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+    .gpt3__header p {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 900;
+        text-align: center;
+    }
+    .gpt3__header-content__people p {
+        padding-left: 10px;
+        text-align: center;
+    }
+    .register-button {
+        font-size: 3.2vw;
+        height: 10vw;
+        box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+        font-family: 'Concert One', sans-serif;
+        font-weight: 800;
+        width: 40vw;
+        margin-left: 25vw;
+    }
+}

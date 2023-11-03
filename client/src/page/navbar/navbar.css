@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+.gpt3__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    padding-left: 1rem;
+}
+
+.n-logo {
+    width: 10vw;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.n-logo:hover {
+    display: block;
+    transform: scale(1.2);
+}
+
+
+.gpt3__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gtp3__navbar-links_logo {
+    margin-right: 2rem;
+}
+
+.gtp3__navbar-links_logo img {
+    width: 62.56px;
+    height: 16.02px;
+}
+
+
+.gpt3__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.gpt3__navbar-sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.anchor {
+    font-family: 'Permanent Marker', cursive;
+    transition: transform .2s;
+}
+
+.anchor:hover {
+    display: block;
+    color: aqua;
+    text-decoration: underline;
+    transform: translateY(15%);
+    cursor: pointer;
+}
+
+.gpt3__navbar-links_container p,
+.gpt3__navbar-sign p,
+.gpt3__navbar-menu_container p {
+    color: white;
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.gpt3__navbar-sign button,
+.gpt3__navbar-menu_container button {
+    padding: 1rem 2rem;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    background: #ff4820;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.gpt3__navbar-menu {
+    margin-left: 1rem;
+    display: none;
+    position: relative;
+}
+
+.gpt3__navbar-menu svg {
+    cursor: pointer;
+}
+
+.gpt3__navbar-menu_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.91);
+    padding: 2rem;
+    padding-left: 0rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 190px;
+    border: 2px solid rgb(67, 227, 241);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.gpt3__navbar-menu_container p {
+    margin: 1rem 0;
+}
+
+.gpt3__navbar-menu_container-links-sign {
+    display: none;
+}
+
+
+
+
+.register-button {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #25bfab;
+    border: 0.8vw solid transparent;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.2vw;
+    width: 29vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    height: 3.5vw;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 200;
+    margin-left: 0.9vw;
+    margin-top: 1vw;
+}
+
+.register-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.register-button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.register-button:hover span {
+    padding-right: 25px;
+}
+
+.register-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .gpt3__navbar-links_container {
+        display: none;
+    }
+
+    .gpt3__navbar-menu {
+        display: flex;
+    }
+
+    .n-logo {
+        width: 12vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .gpt3__navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .gpt3__navbar {
+        padding: 2rem;
+    }
+
+    .gpt3__navbar-sign {
+        display: none;
+    }
+
+    .gpt3__navbar-menu_container {
+        top: 20px;
+    }
+
+    .gpt3__navbar-menu_container-links-sign {
+        display: block;
+    }
+    .gpt3__navbar-menu_container button {
+        position: relative;
+        left: -2.3vw;
+        padding: 1rem 1.5rem;
+        color: white;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        background: #ff4820;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .n-logo {
+        width: 15vw;
+    }
+
+    .anchor {
+        font-family: 'Permanent Marker', cursive;
+        transition: transform .2s;
+        padding-left: 3.6vw;
+    }
+}
