@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,8 +6,78 @@
     font-family: 'Inter', sans-serif;
 }
 
+/* create section */
 
+.gpt-create-container{
+    background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background: radial-gradient(circle at 3% 25%, rgb(9, 33, 57) 0%, rgb(1, 22, 54) 100%);
+}
+.gpt-home-container{
+        background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+          
+          
+      
+          background: -o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+      
+          background: -ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+      
+          background: radial-gradient(circle at 3% 25%, rgb(9, 33, 57) 0%, rgb(1, 22, 54) 100%);
+      }
 
+.create_container{
+    padding: 0vw 4vw;
+    padding-bottom: 10vw;
+}
+
+.c_button{
+    font-family: 'Concert One', sans-serif;
+    padding: 5px 50px;
+    letter-spacing: 1px;
+}
+
+.home_container{
+    padding: 0vw 4vw;
+    padding-bottom: 10vw;
+    min-height: 100vh;
+}
+.c_h1{
+    font-family: 'Concert One', sans-serif;
+    font-size: 45px;
+    color: rgb(21, 205, 251);
+}
+.h_n{
+    font-family: 'Concert One', sans-serif;
+    font-size: 30px;
+    padding: 2px;
+    color: rgb(21, 205, 251);
+}
+
+.c_p{
+    font-family: 'caveat';
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 1.5rem;
+    color: rgb(0, 204, 255);
+    font-weight: 900;
+        text-align: left;
+}
+.c_p_s{
+    font-family: 'caveat';
+    font-size: 20px;
+    line-height: 27px;
+    margin-top: 1.5rem;
+    color: rgb(8, 190, 47);
+    font-weight: 900;
+    text-align: left;
+    text-decoration: underline;
+    padding-left: 5px;
+}
+
+.c_p_span{
+    font-family: 'Concert One', sans-serif;
+    color: rgb(0, 204, 255);
+    padding-left: 5px;
+}
 .title-box{
     padding: 18vw ;
     padding-top: 0vw;
@@ -16,13 +85,48 @@
     letter-spacing:0.5vw;
     padding-bottom: 28vw;
 }
+.input_field{
+  padding: 0px 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 2px solid rgb(0, 204, 255);
+  color: rgb(21, 205, 251);
+  background-color: rgba(29, 83, 119, 0.282);
+  font-size: 15px;
+  font-family: 'Concert One', sans-serif;
+  font-weight: 700;
+}
 
-
+.ff_button{
+    margin-top: 5px;
+    background-color: rgb(11, 141, 173);
+    color: white;
+}
 
 @media screen and (min-width: 480px) {
     .card:nth-child(7n + 1) {
         grid-column: auto/span 2;
         grid-row: auto/span 2;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .input_field{
+        font-size: 13px;
+        font-family: monospace;
+        font-weight: bolder;
+        padding: 8px;
+        padding-left: 20px;
+        margin-top: 20px;
+      }
+      .c_button{
+        font-family: 'Concert One', sans-serif;
+        padding: 5px 50px;
+        padding-bottom: 10px;
+    }
+    .ff_button{
+        margin-top: 10px;
     }
 }
 

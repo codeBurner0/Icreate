@@ -7,12 +7,15 @@ import {motion} from "framer-motion";
 
 function Header(props) {
     return (
-        <>
+        <motion.div
+        id="home"
+        whileInView={{opacity: [0, 1], y: [100, 0]}}
+        transition={{duration: 0.9}}>
         <motion.div
             className="gpt3__header section__padding"
             id="home"
             whileInView={{opacity: [0, 1], y: [100, 0]}}
-            transition={{duration: 0.5}}
+            transition={{duration: 0.9}}
         >
             <div className="gpt3__header-content">
                 <h1 className="gradient__text">
@@ -42,7 +45,7 @@ function Header(props) {
          </div>
         </div>
       </div>
-        </>
+        </motion.div>
     );
 }
 
