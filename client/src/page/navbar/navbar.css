@@ -6,6 +6,7 @@
     align-items: center;
     padding: 2rem 4rem;
     padding-left: 1rem;
+    overflow-x: hidden;
 }
 
 .n-logo {

@@ -8,10 +8,9 @@ import {useState} from "react";
 const Menu = () => (
     <>
         <p><Link className='anchor' to="/">Home</Link></p>
-        <p><Link className='anchor' to="/home">Community</Link></p>
-        <p><Link className='anchor' to="/create-post">Create</Link></p>
-        <p><Link className='anchor' to="#possibility">Open AI</Link></p>
-        <p><Link className='anchor' to="#blog">Library</Link></p>
+        <p><Link className='anchor' to="/community">Community</Link></p>
+        <p><Link className='anchor' to="/create">Create</Link></p>
+        <p><Link className='anchor' to="/about">About</Link></p>
     </>
 )
 
@@ -32,7 +31,7 @@ function Navbar(props) {
                 </div>
             </div>
             <div className="gpt3__navbar-sign">
-                <button>Get Started</button>
+                <button onClick={()=>navigate('/create')}>Get Started</button>
             </div>
             <div className="gpt3__navbar-menu">
                 {toggleMenu
@@ -44,7 +43,7 @@ function Navbar(props) {
                         <div className="gpt3__navbar-menu_container-links">
                             <Menu/>
                             <div className="gpt3__navbar-menu_container-links-sign">
-                                <button>Get Started</button>
+                                <button onClick={()=>navigate('/create')}>Get Started</button>
                             </div>
                         </div>
                     </div>

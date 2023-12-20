@@ -8,6 +8,7 @@
     padding-bottom: 13vw;
     font-family: 'Butcher man';
 }
+
 .gpt-header-container{
     background: -moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
     
@@ -93,7 +94,8 @@
 
 .main-div{
     margin-top: -10vw;
-    padding-bottom: 23vw;
+    padding-bottom: 26vw;
+    margin-bottom: 10vw;
 }
 
 .outer-div{
@@ -105,7 +107,9 @@
     border-radius: 7.5vw;
     margin: auto;
     padding: 2vw;
+    
 }
+
 .inner-div{
     background-color:rgba(35, 128, 227, 0.475);
     width: 70vw;

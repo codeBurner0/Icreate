@@ -7,8 +7,30 @@
 }
 
 /* create section */
-
+:root {
+    --font-family: 'Manrope', sans-serif;
+  
+    --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+    --color-bg: #040C18;
+    --color-footer : #031B34;
+    --color-blog: #042c54;
+    --color-text: #81AFDD;
+    --color-subtext: #FF8A71;
+  }
+  
+  
+#home{
+    padding-bottom: 15vw;
+    overflow-x: hidden;
+}
 .gpt-create-container{
+    background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background: radial-gradient(circle at 3% 25%, rgb(9, 33, 57) 0%, rgb(1, 22, 54) 100%);
+}
+
+.gpt-about-container{
     background: -webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
     background: radial-gradient(circle at 3% 25%, rgb(9, 33, 57) 0%, rgb(1, 22, 54) 100%);
 }
@@ -95,7 +117,7 @@
   background-color: rgba(29, 83, 119, 0.282);
   font-size: 15px;
   font-family: 'Concert One', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .ff_button{
@@ -103,7 +125,10 @@
     background-color: rgb(11, 141, 173);
     color: white;
 }
-
+.banner_image{
+    border: 2px solid rgb(11, 141, 173);
+    margin-top: 5vw;
+}
 @media screen and (min-width: 480px) {
     .card:nth-child(7n + 1) {
         grid-column: auto/span 2;

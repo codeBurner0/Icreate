@@ -4,8 +4,10 @@ import people from '../../assets/images/people.png'
 import AI from '../../assets/images/ai.png'
 import DashBoardImage from '../../assets/images/DashBoardImage.gif'
 import {motion} from "framer-motion";
+import { useNavigate } from 'react-router-dom';
 
 function Header(props) {
+    const navigate =useNavigate()
     return (
         <motion.div
         id="home"
@@ -25,7 +27,7 @@ function Header(props) {
                     Indulgence way everything joy alteration boisterous the attachment. Party we years to order allow
                     asked of.</p>
                 <div className="gpt3__header-content__input">
-                <button className="register-button" onClick={() => Handle()}>
+                <button className="register-button" onClick={()=>navigate('/create')}>
                                 <span> Get Started </span>
                 </button>
                 </div>
