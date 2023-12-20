@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './Home.css'
 import { Card, FormField, Loader } from '../components';
 import {motion} from "framer-motion";
 const RenderCards = ({ data, title }) => {
