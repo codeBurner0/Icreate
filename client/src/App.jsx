@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import { Home, CreatePost } from './page';
-import './styles/ICreate.css'
 import Navbar from './page/navbar/Navbar';
 import Header from './page/header/Header';
 import Features from './page/features/Features';
