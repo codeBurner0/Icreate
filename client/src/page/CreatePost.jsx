@@ -73,7 +73,7 @@ const CreatePost = () => {
         );
 
         await response.json();
-        navigate("/");
+        navigate("/community");
       } catch (err) {
         alert(err);
       } finally {
